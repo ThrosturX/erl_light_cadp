@@ -1,5 +1,6 @@
 -module(light).
 -export([init/0, run/1, spawner/2, cross/1]).
+-compile([native]). % Should be 20% faster 
 
 %% Sleep for T milliseconds
 sleep(T) ->
