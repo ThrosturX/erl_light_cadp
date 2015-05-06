@@ -11,7 +11,7 @@ sleep(T) ->
 init() -> 
 	semaphore:start().
 
-
+%% Starts the spawner to spawn N of all types
 run(N) ->
 	spawn(light, spawner, [N, vehiclen]), % N vehicles going north
 	spawn(light, spawner, [N, vehiclee]), % N vehicles goint east
