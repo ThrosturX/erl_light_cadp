@@ -33,7 +33,7 @@ cross(A) when A == pedestriann ->
 	io:format("~p in crossing ~n", [A]),
 	sleep(100), % Crossing
 	io:format("~p out of crossing ~n", [A]),
-	semaphore:leavepn % Leave crossing
+	semaphore:leavepn(); % Leave crossing
 
 %% Crossing function for pedestrians going east
 cross(A) when A == pedestriane ->
